@@ -871,8 +871,7 @@ input[type=submit]:hover, input[type=reset]:hover {
 
 label {
   font-weight: bold;
-  margin-top: 8px;
-}
+  margin-top: 8px; }
 
 @media (max-width: 1500px) {
   input[type=submit], input[type=reset] {
@@ -922,16 +921,14 @@ label {
   color: #3C3C3B;
   background-color: #EFEFEF;
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 28px;
-}
+  font-size: 28px; }
 
 #quitar-del-carrito-texto {
   text-align: center;
   color: #EFEFEF;
   background-color: #3C3C3B;
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 28px;
-}
+  font-size: 28px; }
 
 #agregar-otra-unidad-texto {
   text-align: center;
@@ -989,22 +986,19 @@ label {
   margin: auto;
   padding: 40px;
   border: 1px solid #AAAAAA;
-  width: 60%;
-}
+  width: 60%; }
   
 #close {
   color: #AAAAAA;
   float: right;
   font-size: 28px;
-  font-weight: bold;
-}
+  font-weight: bold; }
   
 #close:hover,
 #close:focus {
   color: #000;
   text-decoration: none;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 #trash {
   cursor: pointer; }
