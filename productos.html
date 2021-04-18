@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Conocé nuestra colección de velas de soja 100% sustentables. Comprá online con 3 cuotas sin interés y recibí tu producto gratis en compras superiores a $1000.">
+	<meta name="keywords" content="VELA, SOJA, PRODUCTO, SUSTENTABLE, CALMA, ENERGÍA, ECOLÓGICO">
+	<title>MALIEBE: nuestros productos</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="header">
+			<p class="header__paragraph">▶ 3 CUOTAS SIN INTERÉS EN TODA LA TIENDA</p>
+			<div>
+				<a href="https://www.facebook.com/maliebe.ar/" target="_blank"><img src="images/facebook.png" alt="Facebook" heigth="auto" width="16px" class="rotador"></a>
+				<a href="https://www.instagram.com/maliebe.ar/" target="_blank"><img src="images/instagram.png" alt="Instagram" heigth="auto" width="16px" class="rotador"></a>
+			</div>
+		</div>
+	</header>
+
+	<section>
+		<nav id="navbar">
+			<div class="container">
+				<ul class="nav"> 
+					<li class="nav-item"><a class="nav-link" href="index.html">inicio.</a></li>
+					<li class="nav-item"><a class="nav-link" href="esencia.html">esencia.</a></li>
+					<li class="nav-item"><a class="nav-link" href="productos.html">productos.</a></li>
+					<li class="nav-item"><a class="nav-link" href="compromiso.html">compromiso sustentable.</a></li>
+					<li class="nav-item"><a class="nav-link" href="contacto.html">contacto.</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<div id="mobile-menu">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<a href="FinalizarCompra.html"><img src="images/carrito-de-compras.png" alt="Carrito de compras" heigth="auto" width="25px">
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+					    <li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								menu
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="index.html">inicio.</a>
+								<a class="dropdown-item" href="esencia.html">esencia.</a>
+								<a class="dropdown-item" href="productos.html">productos.</a>
+								<a class="dropdown-item" href="compromiso.html">compromiso sustentable.</a>
+								<a class="dropdown-item" href="contacto.html">contacto.</a>
+							</div>
+					    </li>
+				    </ul>
+				</div>
+			</nav>
+		</div>
+
+		<div class="logo">
+			<a href="index.html">
+				<img src="images/logo.png" alt="Logo Maliebe" heigth="auto" width="630px">
+			</a>
+		</div>
+
+		<img src="images/esencia1.png" alt="Banner Maliebe" heigth="auto" width="100%">
+
+		 <div id="notificacion"></div>
+
+		<h1 class="heading">PRODUCTOS</h1>
+		<div class="cuotas-envios-cambios">
+			<div id="cuotas1" class="centered">
+				<h3 class="strong">3 CUOTAS SIN INTERÉS</h3>
+				<p>CON TODAS LAS TARJETAS DE CREDITO</p>
+			</div>
+			<div id="envios1" class="centered">
+				<h3 class="strong">ENVIO GRATIS</h3>
+				<p>¡A TODO EL PAÍS!</p>
+			</div>
+			<div id="cambios1" class="centered">
+				<h3 class="strong">CAMBIOS Y DEVOLUCIONES</h3>
+				<p>DENTRO DE LOS 7 DIAS</p>
+			</div>
+		</div>
+
+		<div id="agregar-al-carrito-texto"></div>
+
+		<div class="nuestros-productos">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="content__paragraph4" id="selección">
+			<h1 class="heading">SELECCIÓN</h1>
+			<div class="contacto-box">
+				<div class="form-style">
+					<form action=""> 
+						<label>Producto seleccionado</label>
+						<select id="productos-listados" onchange="agregarPrecioDesdeDropdown()"></select>
+						<label>Cantidad</label>
+						<input type="text" id="cantidad-selección"><br> 
+						<label>Precio</label>
+						<input type="text" id="precio-selección" value=""><br> 
+						<label>Subtotal</label>
+						<input type="text" id="subtotal-selección" value=""><br>
+						<input type="submit" id="botón-selección-comprar" value="AGREGAR">
+						<input type="reset" id="botón-reset-compra" style="background-color: SlateGrey" value="ELIMINAR">
+					</form>
+					<p id="mensaje-error" style="display: none">Por favor, ingresá la cantidad de productos que querés comprar.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="content__paragraph4" id="resumen-productos"></div>
+
+		<div id="finalizar-compra-formulario"></div>
+
+		<div class="content__paragraph4" id="mensaje-final"></div>
+
+		<div class="slogan">
+			<img src="images/text.png" alt="Sé la energía que querés atraer" heigth="auto" width="70%">
+		</div>	
+	</section>
+
+	<footer>
+		<div class="newsletter">
+			<h3 class="newsletter__title">Newsletter</h3>
+			<p>Dejanos tu email para recibir promociones y descuentos</p>
+			<div>
+				<form action="">
+					<input type="email" placeholder="Email" id="newsletter-email"><br>
+					<input type="submit" value="SUSCRIBIRME" id="newsletter-suscribirme">
+				</form>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="footer__section1">
+				<div id="footer__section1__menu">
+					<ul> 
+						<li><a href="index.html">inicio.</a></li>
+						<li><a href="esencia.html">esencia.</a></li>
+						<li><a href="productos.html">productos.</a></li>
+						<li><a href="compromiso.html">compromiso sustentable.</a></li>
+						<li><a href="contacto.html">contacto.</a></li>
+					</ul>
+				</div>
+				<div>
+					<a href="https://www.facebook.com/maliebe.ar/" target="_blank"><img src="images/facebook.png" alt="Facebook" heigth="auto" width="28px" class="rotador"></a>
+					<a href="https://www.instagram.com/maliebe.ar/" target="_blank"><img src="images/instagram.png" alt="Instagram" heigth="auto" width="28px" class="rotador"></a>
+				</div>
+			</div>
+			<div class="footer__logo">
+				<img src="images/logo.png" alt="Logo Maliebe" heigth="auto" width="40%">
+			</div>
+			<div class="footer__section2">
+				<div class="footer__section2__contact">
+					<div class="footer__section2__contact__grid1">
+						<img src="images/email.png" alt="Correo Maliebe" heigth="auto" width="28px">
+						<a class="footer__section2__contact__grid1__email" href="mailto:hola@maliebe.com.ar">hola@maliebe.com.ar</a>
+					</div>
+					<div class="footer__section2__contact__grid2">
+						<img src="images/pin.png" alt="Ubicación Maliebe" heigth="auto" width="28px">
+						<span class="footer__section2__contact__grid2__location">Buenos Aires, Argentina</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="whatsapp">
+			<div>
+				<a href="https://wa.me/5491156605627" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp" heigth="auto" width="50px"></a>
+			</div>
+		</div>
+		
+		<div class="footer-paragraph">
+			<p>Copyright Maliebe Oficial - 2020. Todos los derechos reservados.</p>
+		</div>
+	</footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+	<script src="js/classes.js"></script>
+	<script src="js/functions.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
+
